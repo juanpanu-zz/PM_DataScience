@@ -17,8 +17,8 @@ def ordenar(lista):
 		intercambio= False 			#inicializo variable para identificar si existe intercambio
 							#Se asume que el último elemento queda organizado
 		for j in range(0, n-i-1): 	 
-									#Se recorre la lista desde 0 hasta n-i-1. 
-									#Se intercambia si el elemento encontrado es mayor que el siguiente
+							#Se recorre la lista desde 0 hasta n-i-1. 
+							#Se intercambia si el elemento encontrado es mayor que el siguiente
 			if lista[j] > lista[j+1]: #
 				lista[j],lista[j+1] = lista[j+1], lista[j]
 				intercambio=True
