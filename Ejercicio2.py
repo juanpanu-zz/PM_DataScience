@@ -7,12 +7,10 @@ import random
 print("Lista Desordenada")
 unordered = list(range(10))
 random.shuffle(unordered)
-
 print(unordered)
 
 def ordenar(lista): 
 	n= len(lista)
-
 	for i in range(n): 				#Se recorre toda la lista
 		intercambio= False 			#inicializo variable para identificar si existe intercambio
 							#Se asume que el último elemento queda organizado
@@ -26,9 +24,9 @@ def ordenar(lista):
 			break
 	return(lista)
 
-mylist=ordenar(unordered)
+listaOrdenada=ordenar(unordered) # llamo a mi funcion y 
 
 print("Lista Ordenada ")
-print(mylist)
+print(listaOrdenada)
 
 	
