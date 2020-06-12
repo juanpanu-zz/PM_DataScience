@@ -3,6 +3,8 @@
 # Realizar un programa que dada un lista de números desordenada, retorne una lista con
 # todos sus valores ordenados de menor a mayor. No se puede utilizar la función “sort” u
 # otras existentes en Javascript para el ordenamiento de la lista. ordenar([5,2,4,1]) = [1,2,4,5]
+
+
 import random
 print("Lista Desordenada")
 unordered = list(range(10))
