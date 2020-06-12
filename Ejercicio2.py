@@ -24,7 +24,7 @@ def ordenar(lista):
 			break
 	return(lista)
 
-listaOrdenada=ordenar(unordered) # llamo a mi funcion y 
+listaOrdenada=ordenar(unordered) 			# llamo a mi funcion y la almaceno en listaOrdenada
 
 print("Lista Ordenada ")
 print(listaOrdenada)
