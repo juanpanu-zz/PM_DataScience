@@ -18,7 +18,7 @@ num = int(input("ingrese un número: "))
 if num > 1: 
    # Verificar Divisores
    for i in range(2,num):
-       if (num % i) == 0: # Tiene un divisor entre 2 y él mismo - 1?
+       if (num % i) == 0: # Tiene un divisor diferente de 1 y él mismo?
            print(num,"no es un número primo")
            print(i," veces",num//i,"es",num)
            break
