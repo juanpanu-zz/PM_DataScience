@@ -15,7 +15,7 @@ def _initialize_courses_from_storage():
 			courses.append(row)
 
 
-def _save_courses_to_storage():
+def _save_courses_to_storage(): #Actualización del.CSV
 	tmp_table_name ='{}.tmp'.format(COURSE_TABLE)
 	with open (tmp_table_name,mode='w') as f:
 		writer=csv.DictWriter(f,fieldnames=COURSE_SCHEMA)
@@ -26,7 +26,7 @@ def _save_courses_to_storage():
 		os.rename(tmp_table_name,COURSE_TABLE)
 
 
-def create_course(course):
+def create_course(course): #Creación del curso
 	global courses
 
 	if course not in courses:
@@ -35,8 +35,8 @@ def create_course(course):
 		print('course already in course\'s list')
 
 
-def list_courses():
-	print('uid |           name         | instructed_by  | dificulty ')
+def list_courses(): #Listaddo de Cursos
+	print('uid |           name         | instructed_by  | dificulty ') #Esquema usado
 	print('*' * 50)
 
 	for idx, course in enumerate(courses):
@@ -47,8 +47,8 @@ def list_courses():
 			dificulty=course['dificulty']))
 
 
-def update_course(course_id, updated_course):
-	global courses
+def update_course(course_id, updated_course):#Actualización de cursos por ID,
+	global courses 							 #Recibe el curso actualizado desde _get_course_from_user
 	if len(courses) - 1 >= course_id:
 		courses[course_id] = updated_course
 	else:
@@ -56,7 +56,7 @@ def update_course(course_id, updated_course):
 
 
 
-def delete_course(course_id):
+def delete_course(course_id): #Eliminación de cursos por ID, recibido por la entrada del usuario
 	global courses
 
 	for idx, course in enumerate(courses):
@@ -65,7 +65,7 @@ def delete_course(course_id):
 			break
 
 
-def search_course(course_name):
+def search_course(course_name):#Busqueda de cursos por nombre
 	for course in courses:
 		if course['name'] != course_name:
 			continue
@@ -73,7 +73,7 @@ def search_course(course_name):
 			return True
 
 
-def _get_course_field(field_name, message='What is the course {}?'):
+def _get_course_field(field_name, message='What is the course {}?'): #Obtiene el campo para actualizar cada curso
 	field = None
 
 	while not field:
@@ -82,8 +82,8 @@ def _get_course_field(field_name, message='What is the course {}?'):
 	return field
 
 
-def _get_course_from_user():
-	course = {
+def _get_course_from_user():	#llama recursivamente al método de obtencion del campo para usarlo como entrada 
+	course = {					# y actualizar los datos en cada campo según sea escrito por el usuario
 		'name': _get_course_field('name'),
 		'instructed_by': _get_course_field('instructed_by'),
 		'dificulty': _get_course_field('dificulty'),
@@ -92,7 +92,7 @@ def _get_course_from_user():
 	return course
 
 
-def _print_welcome():
+def _print_welcome(): # Pantalla inicial
 	print('WELCOME TO PLATZI COURSES')
 	print('*' * 50)
 	print('What would you like to do today?:')
@@ -103,32 +103,34 @@ def _print_welcome():
 	print('[S]earch course')
 
 
+#Orden de ejecución de las funciones
+
 if __name__ == '__main__':
-	_initialize_courses_from_storage()
-	_print_welcome()
+	_initialize_courses_from_storage() 			#Apertura del .CSV
+	_print_welcome()							#Pantalla de bienvenida
 	
 	command = input()
-	command = command.upper()
+	command = command.upper()					#Espera entrada del usuario y la convierte en mayuscula
 
 	if command == 'C':
-		course = _get_course_from_user()
+		course = _get_course_from_user() 		#Llamada al método de creación
 
 		create_course(course)
 	elif command == 'L':
-		list_courses()
+		list_courses()							#Llamada al método de listado de cursos
 	elif command == 'U':
 
-		course_id = int(_get_course_field('id'))
-		updated_course = _get_course_from_user()
+		course_id = int(_get_course_field('id')) #Pide al usuario ingresar el ID del curso
+		updated_course = _get_course_from_user() #Llamada al método de entrada por usuario
 
 		update_course(course_id, updated_course)
 	elif command == 'D':
-			course_id = int(_get_course_field('id'))
+			course_id = int(_get_course_field('id'))#Pide al usuario ingresar el ID del curso
 
-			delete_course(course_id)
+			delete_course(course_id)				#Llama al método de eliminación por ID
 	elif command == 'S':
-			course_name = _get_course_field('name')
-			found = search_course(course_name)
+			course_name = _get_course_field('name') #Pide al usuario ingresar el nombre del curso
+			found = search_course(course_name)		#Usa esta entrada para buscar el curso
 			if found:
 				print('The course is in the course\'s list')
 			else:
@@ -136,4 +138,4 @@ if __name__ == '__main__':
 	else:
 		print('Invalid command')
 
-	_save_courses_to_storage()
+	_save_courses_to_storage() 						#Guarda los datos en el .csv
