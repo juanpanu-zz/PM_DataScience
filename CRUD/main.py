@@ -37,7 +37,7 @@ def create_course(course):			#Creación del curso
 
 def list_courses(): #Listaddo de Cursos
 	print('uid |           name         | instructed_by  | dificulty ')			#Esquema usado
-	print('*' * 50)
+	print('*' * 60)
 
 	for idx, course in enumerate(courses):
 		print('{uid} | {name} | {instructed_by} | {dificulty}'.format(
