@@ -25,16 +25,36 @@ def comatrix(A):  #Calculo de matriz de cofactores de A
                                              #la Formula es Aij = (-1)^(i+j)|Mij|
         c.append(l)    
     return (c)
-
-
   
-def adjunct(A):
-    return np.transpose(comatrix(A)) #Calculo de matriz adjunta, adjA= transpuesta de matriz de cofactores de A
+def adjunct(A): #Calculo de matriz adjunta, adjA= transpuesta de matriz de cofactores de A
+    return np.transpose(comatrix(A)) 
     
-def inverse(A):
-    return (1/np.linalg.det(A)*adjunct(A))  # Calculo de la Matriz inversa mediante la adjunta. A^-1 = [(A*)^T] / |A|
+def inverse(A): # Calculo de la Matriz inversa mediante la adjunta. A^-1 = [(A*)^T] / |A|
+    '''
+    Se pide que el usuario introduzca una matriz de nxn 
+	ya que para calacular la inversa esta debe ser una matriz cuadrada
 
-  
+	Consta de una serie de funciones para implementar la formula de la matrizinversa
+	
+			A^-1 = [(A*)^T] / |A|
+			
+		La matriz adjunta [(A*)^T] => tambien se conoce como la transpuesta de la matriz de cofactores
+		Determinamte de A =>|A| 
+
+	Cada funcion se encarga de genrar una partep para la ecucion.
+	Se calcula inicialmente la determinante de la matriz menor de A.
+	Posteriormente se calcula la matriz de cofactores usando la siguiente fórmula
+	
+			Aij = (-1)^(i+j)|Mij|
+
+	Una vez calculada la matríz de cofactores generamos la matriz adjunta 
+	simplmente se transpone la matriz de cofactores
+	Finalmente, se halla 1/|A| y se multiplica por la matriz adjunta.
+
+	
+    '''
+    return (1/np.linalg.det(A)*adjunct(A))  
+
 
 rows = int(input("ingrese el tamaño de la matriz: "))
 matrix = []
@@ -48,4 +68,5 @@ myAinv=inverse(Aarry)
 print("my A inverse:\n",myAinv,"\n")
 
 Ainv=np.linalg.inv(Aarry)
+# Tambien se genera una matríz inversa utilizando unicamente la libreria de Numpy
 print("numpy A inverse:\n",Ainv)
