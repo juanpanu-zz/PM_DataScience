@@ -9,7 +9,7 @@ Se encuentran 3 archivos:
 	
 	Finalmente se muestra el resultado usando Numpy.
 
-2.MatrizProducto.py
+2. MatrizProducto.py
 	Realiza el producto maticial, inicialmente verifica que
         el numero de columnas en la matriz A sea igual
         al numero de filas en la matriz B
@@ -17,7 +17,7 @@ Se encuentran 3 archivos:
         El elemento cij de la matriz producto se obtiene multiplicando cada elemento
 	de la fila i de la matriz A por cada elemento de la columna j de la matriz B y sumándolos
 
-3.MatrizInversa.py
+3. MatrizInversa.py
 	Se pide que el usuario introduzca una matriz de nxn 
 	ya que para calacular la inversa esta debe ser una matriz cuadrada
 
