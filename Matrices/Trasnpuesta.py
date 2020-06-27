@@ -11,7 +11,7 @@ def transponer(mat):
     return t
 
 
-X = [[12,7,10],             #Entry Matrix
+X = [[12,7,10],           #Entry Matrix
     [4 ,5,9],
     [3 ,8,5]]
 

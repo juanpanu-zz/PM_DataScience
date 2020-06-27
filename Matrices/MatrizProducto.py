@@ -6,6 +6,7 @@ def producto(MatrixA,MatrixB):
         El elemento cij de la matriz producto se obtiene multiplicando cada elemento de la fila i de la matriz
         A por cada elemento de la columna j de la matriz B y sumándolos
         '''
+    
     rowsA = len(MatrixA)
     colsA = len(MatrixA[0])
     rowsB = len(MatrixB)

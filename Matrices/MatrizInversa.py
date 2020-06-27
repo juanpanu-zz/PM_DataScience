@@ -3,8 +3,7 @@ import numpy as np
 def minor(A,i,j): #Calculo del determinante del menor
     m=[]
     rows=len(A)
-    cols=rows
-    
+    cols=rows 
     for r in range(rows):
       l=[]
       for c in range(cols):
