@@ -14,6 +14,9 @@ class Node:
         return self.data
 
 class CircularLinkedList:
+    '''
+    Tipo de lista donde el último nodo apunta al head de la lista
+    '''
     def __init__(self):
         self.head = None
 
