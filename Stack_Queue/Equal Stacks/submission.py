@@ -11,7 +11,7 @@ def equalStacks(h1, h2, h3):
     # Write your code here.
     #
 
-    l1, l2, l3 = 0, 0, 0				#Initialize max heigth in each stack
+    l1, l2, l3 = 0, 0, 0				#Initialize max height in each stack
     for each in h1:
         l1 = l1 + each
     for each in h2:
