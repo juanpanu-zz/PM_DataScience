@@ -264,7 +264,7 @@ if __name__ == "__main__":
     print('-'*100)
     double_list.traverse()
 
-    # delete the first value
+    # elimino  head
     double_list.delete_at_start()
 
     print('-'*100)
@@ -272,7 +272,7 @@ if __name__ == "__main__":
     print('-'*100)
     double_list.traverse()
 
-    # delete the last value
+    # elimino tail
     double_list.delete_at_end()
 
     print('-'*100)
