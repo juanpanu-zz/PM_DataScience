@@ -10,38 +10,51 @@ class Contribucion:
         self.calificacion = calificacion
         
     
-    def actualizarAutor(self):
-        pass
+    def actualizarAutor(self,nuevoid):
+        """
+            Actualiza el id del autor en una contribución
+            #Nota:  cada vez que se actualice debe ejecutarse
+                    el metodo de verificar autor desde el main.
+        """
+        self._idAutor=nuevoid
 
-    @property    #ID Getter function 
+    #ID Getter function 
+    @property    
     def id(self):
         return self._id
 
-    @id.setter #ID Setter function
+    #ID Setter function
+    @id.setter 
     def id(self,id):
         self._id = id
 
-    @property    #titulo Getter function 
+    #titulo Getter function 
+    @property    
     def titulo(self):
         return self._titulo
 
-    @titulo.setter #titulo Setter function
+    #titulo Setter function
+    @titulo.setter 
     def titulo(self,titulo):
         self._titulo = titulo
 
-    @property    #idAutor Getter function 
+    #idAutor Getter function
+    @property     
     def idAutor(self):
         return self._idAutor
 
-    @idAutor.setter #idAutor Setter function
+    #idAutor Setter function
+    @idAutor.setter 
     def idAutor(self,idAutor):
         self._idAutor = idAutor
 
-    @property    #calificacion Getter function 
+    #calificacion Getter function 
+    @property    
     def calificacion(self):
         return self._calificacion
       
-    @calificacion.setter #calificacion Setter function
+    #calificacion Setter function
+    @calificacion.setter 
     def calificacion(self,calificacion):
         self._calificacion = calificacion
          
@@ -50,6 +63,9 @@ class Contribucion:
 
     @classmethod
     def obInstances(cls):
+        """
+            Metodo de clase para obtener y contar las instancias realizadas
+        """
         return cls.instances
         
                 

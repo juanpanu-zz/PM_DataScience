@@ -15,16 +15,31 @@ class Autor:
         
 
     def verificarCalificacion(self, contribucion):
+        """
+            Cada vez que se ejecuta la verificación del autor
+            se evalua si la el id de autor de la contribucion 
+            corresponde al id del autor que se esta veificando
+            y se procede a contar sus publicaciones y 
+            a obtener las calificaciones
+         """
         if self.id == contribucion.idAutor:
             self._publicaciones +=1
             self._listcal.append(contribucion.calificacion)
             self._calificacionMax=max(self._listcal)
+       
             
 
 
     def calcularPromedio(self):
-        mean= sum(self._listcal) / len(self._listcal)
-        self._promedioCalificacion = mean
+        """
+            Calculo basico del promedio,
+            si la lista está vacia se retorna 0
+        """
+        if self._listcal != []:
+            mean= sum(self._listcal) / len(self._listcal)
+            self._promedioCalificacion = mean
+        else: 
+            self._promedioCalificacion = 0
 
     #ID Getter function 
     @property    
