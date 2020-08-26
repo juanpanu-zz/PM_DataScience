@@ -1,6 +1,6 @@
 class Coordenada:
 
-    def __init__(self):
+    def __init__(self,x,y):
         self.x = x
         self.y =y
 
@@ -9,6 +9,6 @@ class Coordenada:
 
     def distancia(self, otra_coordenada):
         delta_x = self.x - otra_coordenada.x
-        deñta_y = self.y - otra_coordenada.y
+        delta_y = self.y - otra_coordenada.y
 
         return (delta_x**2 + delta_y**2)**0.5
