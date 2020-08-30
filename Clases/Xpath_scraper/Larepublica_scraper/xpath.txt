@@ -1,0 +1,4 @@
+Links = //div/text-fill[not(@class)]/a/@href
+Titulos = ///div/h3[contains(@class, "kicker")]/following-sibling::text-fill/a/text()
+Resumenes = //div[@class="lead"]/p/text()
+Cuerpo = //div[@class="html-content"]/p[not(@class)]/text()
