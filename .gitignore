@@ -131,3 +131,4 @@ dmypy.json
 .vscode
 .clases/
 Estadistica/examen.py
+*.code-workspace
