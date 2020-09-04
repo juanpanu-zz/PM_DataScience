@@ -1,5 +1,4 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
+#LATAM Scraper
 # %%
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
