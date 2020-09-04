@@ -1,0 +1,319 @@
+[
+    {
+        "precios": [
+            {
+                "LIGHT": {
+                    "moneda": "$",
+                    "valor": "1.587.140"
+                }
+            },
+            {
+                "PLUS": {
+                    "moneda": "$",
+                    "valor": "1.798.190"
+                }
+            },
+            {
+                "TOP": {
+                    "moneda": "$",
+                    "valor": "1.913.270"
+                }
+            }
+        ],
+        "tiempos": {
+            "hora_salida": "17:25",
+            "hora_llegada": "15:00",
+            "duracion_vuelo": "15H35M"
+        },
+        "escalas": [
+            {
+                "origen": "BOG",
+                "hora_salida": "17:25",
+                "destino": "MAD",
+                "hora_llegada": "10:30",
+                "duracion_vuelo": "10:5",
+                "num_vuelo": "LA7111",
+                "modelo": "A340-600",
+                "duracion_escala": "3:5"
+            },
+            {
+                "origen": "MAD",
+                "hora_salida": "13:35",
+                "destino": "LHR",
+                "hora_llegada": "15:00",
+                "duracion_vuelo": "2:25",
+                "num_vuelo": "LA5434",
+                "modelo": "Airbus 320-200",
+                "duracion_escala": ""
+            }
+        ]
+    },
+    {
+        "precios": [
+            {
+                "LIGHT": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "PLUS": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "TOP": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "LIGHT": {
+                    "moneda": "$",
+                    "valor": "1.587.140"
+                }
+            },
+            {
+                "PLUS": {
+                    "moneda": "$",
+                    "valor": "1.798.190"
+                }
+            },
+            {
+                "TOP": {
+                    "moneda": "$",
+                    "valor": "1.913.270"
+                }
+            }
+        ],
+        "tiempos": {
+            "hora_salida": "17:25",
+            "hora_llegada": "16:20",
+            "duracion_vuelo": "16H55M"
+        },
+        "escalas": [
+            {
+                "origen": "BOG",
+                "hora_salida": "17:25",
+                "destino": "MAD",
+                "hora_llegada": "10:30",
+                "duracion_vuelo": "10:5",
+                "num_vuelo": "LA7111",
+                "modelo": "A340-600",
+                "duracion_escala": "4:25"
+            },
+            {
+                "origen": "MAD",
+                "hora_salida": "14:55",
+                "destino": "LHR",
+                "hora_llegada": "16:20",
+                "duracion_vuelo": "2:25",
+                "num_vuelo": "LA7076",
+                "modelo": "Airbus 320-200",
+                "duracion_escala": ""
+            }
+        ]
+    },
+    {
+        "precios": [
+            {
+                "LIGHT": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "PLUS": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "TOP": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "LIGHT": {
+                    "moneda": "$",
+                    "valor": "1.587.140"
+                }
+            },
+            {
+                "PLUS": {
+                    "moneda": "$",
+                    "valor": "1.798.190"
+                }
+            },
+            {
+                "TOP": {
+                    "moneda": "$",
+                    "valor": "1.913.270"
+                }
+            }
+        ],
+        "tiempos": {
+            "hora_salida": "17:25",
+            "hora_llegada": "17:15",
+            "duracion_vuelo": "17H50M"
+        },
+        "escalas": [
+            {
+                "origen": "BOG",
+                "hora_salida": "17:25",
+                "destino": "MAD",
+                "hora_llegada": "10:30",
+                "duracion_vuelo": "10:5",
+                "num_vuelo": "LA7111",
+                "modelo": "A340-600",
+                "duracion_escala": "5:20"
+            },
+            {
+                "origen": "MAD",
+                "hora_salida": "15:50",
+                "destino": "LHR",
+                "hora_llegada": "17:15",
+                "duracion_vuelo": "2:25",
+                "num_vuelo": "LA7088",
+                "modelo": "A340-600",
+                "duracion_escala": ""
+            }
+        ]
+    },
+    {
+        "precios": [
+            {
+                "LIGHT": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "PLUS": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "TOP": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "LIGHT": {
+                    "moneda": "$",
+                    "valor": "1.587.140"
+                }
+            },
+            {
+                "PLUS": {
+                    "moneda": "$",
+                    "valor": "1.798.190"
+                }
+            },
+            {
+                "TOP": {
+                    "moneda": "$",
+                    "valor": "1.913.270"
+                }
+            }
+        ],
+        "tiempos": {
+            "hora_salida": "17:25",
+            "hora_llegada": "17:55",
+            "duracion_vuelo": "18H30M"
+        },
+        "escalas": [
+            {
+                "origen": "BOG",
+                "hora_salida": "17:25",
+                "destino": "MAD",
+                "hora_llegada": "10:30",
+                "duracion_vuelo": "10:5",
+                "num_vuelo": "LA7111",
+                "modelo": "A340-600",
+                "duracion_escala": "6:0"
+            },
+            {
+                "origen": "MAD",
+                "hora_salida": "16:30",
+                "destino": "LHR",
+                "hora_llegada": "17:55",
+                "duracion_vuelo": "2:25",
+                "num_vuelo": "LA7083",
+                "modelo": "Airbus 320-200",
+                "duracion_escala": ""
+            }
+        ]
+    },
+    {
+        "precios": [
+            {
+                "LIGHT": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "PLUS": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "TOP": {
+                    "moneda": "",
+                    "valor": ""
+                }
+            },
+            {
+                "LIGHT": {
+                    "moneda": "$",
+                    "valor": "1.587.140"
+                }
+            },
+            {
+                "PLUS": {
+                    "moneda": "$",
+                    "valor": "1.798.190"
+                }
+            },
+            {
+                "TOP": {
+                    "moneda": "$",
+                    "valor": "1.913.270"
+                }
+            }
+        ],
+        "tiempos": {
+            "hora_salida": "17:25",
+            "hora_llegada": "18:30",
+            "duracion_vuelo": "19H5M"
+        },
+        "escalas": [
+            {
+                "origen": "BOG",
+                "hora_salida": "17:25",
+                "destino": "MAD",
+                "hora_llegada": "10:30",
+                "duracion_vuelo": "10:5",
+                "num_vuelo": "LA7111",
+                "modelo": "A340-600",
+                "duracion_escala": "6:35"
+            },
+            {
+                "origen": "MAD",
+                "hora_salida": "17:05",
+                "destino": "LHR",
+                "hora_llegada": "18:30",
+                "duracion_vuelo": "2:25",
+                "num_vuelo": "LA5448",
+                "modelo": "Airbus 320-200",
+                "duracion_escala": ""
+            }
+        ]
+    }
+]
