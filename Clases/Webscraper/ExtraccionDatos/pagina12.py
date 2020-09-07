@@ -15,9 +15,9 @@ seccion = secciones[0]
 #print(seccion.a.get_text())
 
 seccion.a.get('href')
-
+# %%
 links_secciones = [seccion.a.get('href') for seccion in secciones]
-#print(links_secciones)
+print(links_secciones)
 
 sec = requests.get(links_secciones[0])
 # print(type(sec))
