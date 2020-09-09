@@ -22,7 +22,7 @@ class AmazonSpiderSpider(scrapy.Spider):
         Funcion principal para obtener los elemntos de cada página de Amazon
         """  
         # Listado item
-        item_list = response.xpath('//div[@class="a-section a-spacing-none"]//a[@class="a-link-normal a-text-normal"]/@href').getall()
+        item_list = response.xpath('//div[@class="sg-col-inner"]//a[@class="a-link-normal a-text-normal"]/@href').getall()
         
         for item in item_list:
             yield response.follow(item, callback = self.parse_item)
