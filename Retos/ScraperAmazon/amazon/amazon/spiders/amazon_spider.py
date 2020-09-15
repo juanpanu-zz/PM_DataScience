@@ -47,7 +47,6 @@ class AmazonSpiderSpider(scrapy.Spider):
             product_price = product_price
         else:
             product_price = "Price Not Found"
-        # if product_name and product_price is not None:
-        #     product_name = product_name.strip()
+       
         items['product_name']={product_name, product_price} 
         yield items
