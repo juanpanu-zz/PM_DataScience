@@ -3,7 +3,6 @@ from ..items import AmazonItem
 
 class AmazonSpiderSpider(scrapy.Spider):
     name = 'amazon_spider'
-    page_number = 2
     # allowed_domains = ['amazon.com']
     search_item = input('Wich item are you looking for?:\n')
     search_item = search_item.replace(' ','+')
@@ -28,10 +27,7 @@ class AmazonSpiderSpider(scrapy.Spider):
             yield response.follow(item, callback = self.parse_item)
         # Link siguiente pagina
         next_page = response.xpath('//div[@class="a-section a-spacing-none a-padding-base"]//li[@class="a-last"]/a/@href').get()
-        # next_page = 'https://www.amazon.com/s?k=ps4+video+games&page='+ str(AmazonSpiderSpider.page_number)
-        # # print(next_page)
         if next_page is not None:# and AmazonSpiderSpider.page_number <= 10:
-        #     AmazonSpiderSpider.page_number += 1
             yield response.follow(next_page,callback=self.parse)
          
     
