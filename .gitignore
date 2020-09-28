@@ -132,3 +132,5 @@ dmypy.json
 .clases/
 Estadistica/examen.py
 *.code-workspace
+
+quotes_scraper/
